@@ -50,7 +50,15 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtactText.extract(['css-loader', 'sass-loader']), 
+        loader: ExtactText.extract([
+          {loader: 'css-loader'},
+          {
+            loader:'sass-loader', 
+            options: {
+              includePaths: `${__dirname}/app/scss`,
+            },
+          },
+        ]), 
       },
       {
         test: /\.json$/,
