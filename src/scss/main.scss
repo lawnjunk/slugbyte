@@ -1,0 +1,11 @@
+// get vars
+@import "./theme.scss";
+
+// get mixins
+@import "./reset.scss";
+@import "./base.scss";
+
+// run mixins
+@include reset;
+@include base;
+

@@ -1,10 +1,13 @@
 'use strict';
 
+require('./scss/main.scss');
+
 // npm modules
-import ReactDOM from 'react-dom';
 import React from 'react';
+import ReactDOM from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
+import {Router, Route, browserHistory} from 'react-router';
 
 // app modules
 import Editor from './container/editor.jsx';
@@ -20,10 +23,9 @@ let store = createStore(reducer);
 
 let App = () => (
   <Provider store={store}>
-    <div>
-      <h1> lulwat slug </h1>
-      <Editor />
-    </div>
+    <Router history={browserHistory}>
+      <Route path="/" component={Editor} />
+    </Router>
   </Provider>
 );
 

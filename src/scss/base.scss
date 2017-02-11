@@ -1,0 +1,128 @@
+@import  "./theme.scss";
+
+@mixin base {
+  body * {
+    width: 100%;
+    box-sizing: border-box;
+    color: $c-grey;
+    font-size: 4vw;
+    font-family: sans-serif;;
+    font-stretch: extra-condensed;
+    margin-bottom: $s-margin-bottom;
+  }
+
+  body {
+    padding: $s-pad * 3;
+  }
+
+  a {
+    font-weight: bolder;
+    color: $c-primary;
+
+    &:hover {
+      color: $c-black;
+    }
+  }
+
+
+  h1,h2,h3,h4,h5,h6 {
+    color: $c-black;
+  }
+
+  @include headingRatio(1.4);
+
+  blockquote {
+    border-left: $s-pad solid $c-greylight;
+    padding-left: $s-pad;
+  }
+
+  strong {
+    font-weight: bolder;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  ul, ol {
+    margin-left: $s-pad * 2;
+    padding-left: $s-pad * 2;
+    color: $c-black;
+
+    ul {
+      list-style: circle;
+    }
+
+    ol {
+      list-style: lower-roman;
+    }
+  }
+
+  ul {
+    list-style: initial;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  code, blockquote, pre, ul, ol, li, input, textarea {
+    font-family: monospace;
+    a {
+      font-family: monospace;
+    }
+  }
+
+
+  button, input, textarea, form * {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    color: $c-black;
+    font-weight: bolder;
+    background-color: $c-greylight;
+    cursor: pointer;
+    @include border;
+
+    &:hover {
+      background-color: $c-greylight * 0.7;
+    }
+
+    &:active{
+      background-color: $c-greylight * 0.5;
+    }
+  }
+
+  input[type="submit"] {
+    @extend button;
+  }
+
+  label {
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 2em;
+  }
+
+  input {
+    @include border;
+  }
+
+  select {
+    @extend button;
+    border-radius: 0px;
+  }
+
+  textarea {
+    width: 100%;
+    resize: none;
+    height: auto;
+    font-size: 1.25;
+    padding: $s-pad * 2;
+    @include border;
+  }
+
+
+}
