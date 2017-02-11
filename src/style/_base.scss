@@ -9,11 +9,27 @@
     font-family: sans-serif;;
     font-stretch: extra-condensed;
     margin-bottom: $s-margin-bottom;
+    transition: 500ms;
+
+    @media screen and (min-width: 400px){
+      font-size: 3vw;
+    }
+
+    @media screen and (min-width: 720px){
+      font-size: 2vw;
+    }
+
+    @media screen and (min-width: 1000px){
+      font-size: 1.5vw;
+    }
   }
 
   body {
     padding: $s-pad * 3;
   }
+
+
+
 
   a {
     font-weight: bolder;
@@ -119,10 +135,20 @@
     width: 100%;
     resize: none;
     height: auto;
-    font-size: 1.25;
+    font-size: 1.25em;
     padding: $s-pad * 2;
     @include border;
   }
 
+  @media screen and (min-width: 480px){
+    @include headingRatio(1.1);
+  }
 
+  @media screen and (min-width: 720px){
+    @include headingRatio(0.8);
+  }
+
+  @media screen and (min-width: 1000px){
+    @include headingRatio(0.6);
+  }
 }

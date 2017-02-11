@@ -1,6 +1,6 @@
 'use strict';
 
-require('./scss/main.scss');
+require('./style/main.scss');
 
 // npm modules
 import React from 'react';
