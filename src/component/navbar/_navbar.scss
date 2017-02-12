@@ -1,0 +1,92 @@
+
+@import "../../style/_theme.scss";
+
+@mixin  navbar-list-separator {
+  li {
+    display: inline-block;
+    width: auto;
+    padding-left: $s-pad;
+    &:nth-child(n){
+      &::before {
+        color: $c-greylight;
+        content: "|";
+      }
+    }
+
+    &:nth-child(1){
+      &::before {
+        content: "";
+      }
+    }
+  }
+
+}
+
+.navbar {
+  background-color: $c-grey;
+  padding-bottom: $s-pad / 2;
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    padding: $s-pad;
+    font-family: monospace;
+    background-color: $c-black;
+    color: $c-white;
+  }
+
+
+  a {
+    color: $c-greylight;
+
+    &:hover {
+      color: $c-primary;
+    }
+  }
+
+  @media  screen and (min-width: 500px){
+    padding-bottom: 0px;
+
+    * {
+      font-size: 1em;
+    }
+
+    ul {
+      margin: 0px;
+      padding:  $s-pad 0;
+      text-align: center;
+
+      @include navbar-list-separator;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    padding: 0px;
+    background-color: $c-grey;
+
+    * {
+      margin: 0px;
+    }
+
+    h1 {
+      display: inline-block;
+      padding-top: -2 * $s-pad;
+      font-size: 1em;
+      width: 25%;
+      height: 100%;
+      text-align: center;
+    }
+
+    nav {
+      display: inline-block;
+      width: 70%;
+      ul,li,a {
+        text-align: right;
+      }
+
+      @include navbar-list-separator;
+    }
+  }
+
+}

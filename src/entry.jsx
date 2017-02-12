@@ -10,7 +10,9 @@ import {Provider} from 'react-redux';
 import {Router, Route, browserHistory} from 'react-router';
 
 // app modules
+import Navbar from './component/navbar';
 import Editor from './container/editor.jsx';
+import StyleGuide from './component/style-guide/style-guide.jsx';
 
 let reducer = (state={}, action) => {
   switch (action.type){
@@ -21,11 +23,20 @@ let reducer = (state={}, action) => {
 
 let store = createStore(reducer);
 
+let views = [
+  {path: '/', title: 'style_guide'},
+  {editor: '/editor', title: 'editor'},
+  {editor: '/editor', title: 'what'},
+]
+
 let App = () => (
   <Provider store={store}>
-    <Router history={browserHistory}>
-      <Route path="/" component={Editor} />
-    </Router>
+    <div>
+      <Navbar views={views}/>
+      <Router history={browserHistory}>
+        <Route path="/" component={StyleGuide} />
+      </Router>
+    </div>
   </Provider>
 );
 
