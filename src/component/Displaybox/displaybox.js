@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import Highlight from 'react-highlight';
 import {Link} from 'react-router';
 import SmartHeading from '../smart-heading';
+const urlparser = require('url').parse;
 
 let SmartPre = (props) => {
   return <Highlight className={`language-${props.language}`}>
@@ -14,7 +15,9 @@ let SmartPre = (props) => {
 }; 
 
 let SmartAnchor = (props) => {
-  return <Link to={props.href}> {props.children} </Link>
+  let {hash, pathname, query} = urlparser(props.href);
+
+  return <Link to={{hash, pathname, query}}> {props.children} </Link>
 }
 
 let Displaybox = ({text}) => {

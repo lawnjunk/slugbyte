@@ -14,9 +14,10 @@
   .displaybox {
     height: 50vh;
     width: 100%;
-    padding: $s-pad;
+    padding: $s-pad * 4.5;
     word-break: break-all;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: visible;
     @include border;
   }
 }

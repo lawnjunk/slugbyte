@@ -9,19 +9,18 @@ const StyleGuide = () => {
     <div>
       <BackArrow path='/random' />
       <Editor />
-      <h1> <a href="#"> wat </a> </h1>
-      <SmartHeading level={1}><a href="#">Style Pratice G </a> </SmartHeading>
-      <SmartHeading level={2}><a href="#">Style Pratice H </a> </SmartHeading>
-      <SmartHeading level={3}><a href="#">Style Pratice I </a> </SmartHeading>
-      <SmartHeading level={4}><a href="#">Style Pratice J </a> </SmartHeading>
-      <SmartHeading level={5}><a href="#">Style Pratice K </a> </SmartHeading>
-      <SmartHeading level={6}> <a href="#"><strong> Style Pratice L</strong> </a> </SmartHeading>
       <SmartHeading level={1}> Style Pratice A </SmartHeading>
       <SmartHeading level={2}> Style Pratice B </SmartHeading>
       <SmartHeading level={3}> Style Pratice C </SmartHeading>
       <SmartHeading level={4}> Style Pratice D </SmartHeading>
       <SmartHeading level={5}> Style Pratice E </SmartHeading>
       <SmartHeading level={6}> Style Pratice F </SmartHeading>
+      <SmartHeading level={6}><a href="#">Style Pratice G </a> </SmartHeading>
+      <SmartHeading level={5}><a href="#">Style Pratice H </a> </SmartHeading>
+      <SmartHeading level={4}><a href="#">Style Pratice I </a> </SmartHeading>
+      <SmartHeading level={3}><a href="#">Style Pratice J </a> </SmartHeading>
+      <SmartHeading level={2}><a href="#">Style Pratice K </a> </SmartHeading>
+      <SmartHeading level={1}> <a href="#"> Style Pratice L </a> </SmartHeading>
       <blockquote> this is a blockquote </blockquote>
       <p> strong: <strong> hello world </strong> </p>
       <p> em: <em> hello world </em> </p>

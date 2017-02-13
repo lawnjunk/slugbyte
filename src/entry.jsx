@@ -7,7 +7,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {createStore, combineReducers} from 'redux';
 import {Provider} from 'react-redux';
-import {Router, Route, browserHistory} from 'react-router';
+import {Router, Route, browserHistory, applyRouterMiddleware} from 'react-router';
+import {useScroll} from 'react-router-scroll';
 
 // reducer  modules
 import contentReducer from './reducer/content.js';
@@ -39,7 +40,7 @@ store.dispatch(VIEWS_SET([
 let App = () => (
   <Provider store={store}>
   <div>
-  <Router history={browserHistory}>
+  <Router history={browserHistory} render={applyRouterMiddleware(useScroll())}>
     {store.getState().views.map(view => {
       return <Route key={view.path} path={view.path} component={view.component} />
     })}
