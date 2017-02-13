@@ -1,22 +1,27 @@
 import React from 'react';
-import Editor from '../../container/editor.jsx';
+import Editor from '../../container/editor';
+import BackArrow from '../back-arrow';
+import NavbarContainer from '../../container/navbar';
+import SmartHeading from '../smart-heading';
 
 const StyleGuide = () => {
   return (
     <div>
+      <BackArrow path='/random' />
       <Editor />
-      <h1> Style Practice </h1>
-      <h2> Style Practice </h2>
-      <h3> Style Practice </h3>
-      <h4> Style Practice </h4>
-      <h5> Style Practice </h5>
-      <h6> Style Practice </h6>
-      <h6> <a href="#"> Style Practice </a> </h6>
-      <h5> <a href="#"> Style Practice </a> </h5>
-      <h4> <a href="#"> Style Practice </a> </h4>
-      <h3> <a href="#"> Style Practice </a> </h3>
-      <h2> <a href="#"> Style Practice </a> </h2>
-      <h1> <a href="#"> Style Practice </a> </h1>
+      <h1> <a href="#"> wat </a> </h1>
+      <SmartHeading level={1}><a href="#">Style Pratice G </a> </SmartHeading>
+      <SmartHeading level={2}><a href="#">Style Pratice H </a> </SmartHeading>
+      <SmartHeading level={3}><a href="#">Style Pratice I </a> </SmartHeading>
+      <SmartHeading level={4}><a href="#">Style Pratice J </a> </SmartHeading>
+      <SmartHeading level={5}><a href="#">Style Pratice K </a> </SmartHeading>
+      <SmartHeading level={6}> <a href="#"><strong> Style Pratice L</strong> </a> </SmartHeading>
+      <SmartHeading level={1}> Style Pratice A </SmartHeading>
+      <SmartHeading level={2}> Style Pratice B </SmartHeading>
+      <SmartHeading level={3}> Style Pratice C </SmartHeading>
+      <SmartHeading level={4}> Style Pratice D </SmartHeading>
+      <SmartHeading level={5}> Style Pratice E </SmartHeading>
+      <SmartHeading level={6}> Style Pratice F </SmartHeading>
       <blockquote> this is a blockquote </blockquote>
       <p> strong: <strong> hello world </strong> </p>
       <p> em: <em> hello world </em> </p>

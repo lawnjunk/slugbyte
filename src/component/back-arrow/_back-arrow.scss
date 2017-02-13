@@ -1,0 +1,18 @@
+@import "../../style/_theme.scss";
+
+.back-arrow {
+  color: $c-black;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-decoration: none;
+  vertical-align: bottom;
+
+  &::before {
+    display: inline-block;
+    background-image: url('../../assets/svg/back-arrow.svg');
+    background-size: 1em 1em;
+    width: 1em ;
+    height: 1em ;
+    content: " ";
+  }
+}

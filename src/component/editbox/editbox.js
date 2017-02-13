@@ -7,9 +7,11 @@ let Editbox = ({updateText}) => {
     updateText(el.target.value);
   }
 
+  let placeholder = 'Hi,\nI\'m an editor. Feed me markdown!'
+
   return (
-    <div>
-    <textarea onChange={handleUpdate}>
+    <div className="editor">
+    <textarea onChange={handleUpdate} placeholder={placeholder}>
     </textarea>
     </div>
   );

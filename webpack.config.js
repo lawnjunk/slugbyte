@@ -36,6 +36,9 @@ module.exports = {
     path: `${__dirname}/build`,
     filename: `[hash].js`,
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   module: {
     rules: [
       {
@@ -67,6 +70,14 @@ module.exports = {
       {
         test: /\.md$/,
         loader: 'html-loader', 
+      },
+      {
+        test: /\.svg$/,
+        loader: 'url-loader',
+      },
+      {
+        test: /\.png$/,
+        loader: 'url-loader',
       },
 
     ],

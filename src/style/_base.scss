@@ -1,7 +1,7 @@
 @import  "theme";
 
 @mixin base {
-  body * {
+  body, body * {
     width: 100%;
     box-sizing: border-box;
     color: $c-grey;
@@ -9,7 +9,6 @@
     font-family: sans-serif;;
     font-stretch: extra-condensed;
     margin-bottom: $s-margin-bottom;
-    transition: 500ms;
 
     @media screen and (min-width: 400px){
       font-size: 3vw;
@@ -22,14 +21,19 @@
     @media screen and (min-width: 1000px){
       font-size: 1.5vw;
     }
+
+    @media screen and (min-width: 1400px){
+      font-size: 1vw;
+    }
   }
 
   body {
     padding: $s-pad * 3;
   }
 
-
-
+  button, a , input, select {
+    transition: color 500ms, background-color 500ms;
+  }
 
   a {
     font-weight: bolder;
@@ -150,5 +154,14 @@
 
   @media screen and (min-width: 1000px){
     @include headingRatio(0.6);
+    body {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (min-width: 1500px){
+    @include headingRatio(0.4);
   }
 }

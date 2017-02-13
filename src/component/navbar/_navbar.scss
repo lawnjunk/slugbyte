@@ -23,10 +23,13 @@
 }
 
 .navbar {
-  background-color: $c-grey;
+  background-color: #ff7a7a;
   padding-bottom: $s-pad / 2;
+
+  margin-bottom: $s-pad * 2;
   li {
     list-style: none;
+    text-align: center;
   }
 
   h1 {
@@ -36,17 +39,27 @@
     color: $c-white;
   }
 
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+
 
   a {
-    color: $c-greylight;
+    color: $c-greydark;
+    text-decoration: none;
+    font-size: 1.5em;
 
     &:hover {
-      color: $c-primary;
+      color: #ff7a7a * 0.7;
     }
   }
 
   @media  screen and (min-width: 500px){
     padding-bottom: 0px;
+    a {
+      font-size: 1em;
+    }
 
     * {
       font-size: 1em;
@@ -54,8 +67,8 @@
 
     ul {
       margin: 0px;
-      padding:  $s-pad 0;
-      text-align: center;
+      padding:  ($s-pad / 2) $s-pad;
+    text-align: left;
 
       @include navbar-list-separator;
     }
@@ -63,7 +76,6 @@
 
   @media screen and (min-width: 900px) {
     padding: 0px;
-    background-color: $c-grey;
 
     * {
       margin: 0px;
