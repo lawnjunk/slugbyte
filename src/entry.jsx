@@ -21,6 +21,7 @@ import RandomContainer from './container/random.js';
 import Editor from './container/editor';
 import MarkdownEditor from './component/markdown-editor';
 import StyleGuide from './component/style-guide/style-guide.jsx';
+import Construction from './component/construction';
 
 let store = createStore(combineReducers({
   views: viewsReducer,
@@ -29,9 +30,9 @@ let store = createStore(combineReducers({
 
 store.dispatch(VIEWS_SET([
   {path: '/', title: 'home', component: HomeContainer},
-  {path: '/tutorial', title: 'tutorials', component: HomeContainer},
-  {path: '/portfolio', title: 'portfolio', component: HomeContainer},
-  {path: '/awesome', title: 'awesome', component: HomeContainer},
+  {path: '/tutorial', title: 'tutorials', component: Construction},
+  {path: '/portfolio', title: 'portfolio', component: Construction},
+  {path: '/awesome', title: 'awesome', component: Construction},
   {path: '/random', title: 'random', component: RandomContainer},
   {path: '/style-guide', component: StyleGuide},
   {path: '/editor', component: MarkdownEditor },

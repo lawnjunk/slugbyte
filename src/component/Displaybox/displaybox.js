@@ -16,7 +16,6 @@ let SmartPre = (props) => {
 
 let SmartAnchor = (props) => {
   let {hash, pathname, query} = urlparser(props.href);
-
   return <Link to={{hash, pathname, query}}> {props.children} </Link>
 }
 

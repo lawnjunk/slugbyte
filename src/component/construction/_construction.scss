@@ -1,0 +1,19 @@
+.construction {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    text-align: center;
+  }
+
+  .worker { height: 50vh;
+    $worker-size: 50vw;
+    display: block;
+    height: $worker-size;
+    width: $worker-size;
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../../assets/svg/construction.svg');
+    background-size: $worker-size $worker-size;
+  }
+}
