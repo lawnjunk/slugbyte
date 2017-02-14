@@ -1,5 +1,5 @@
 # Awesome Resources
-This page is inspired by all the [Awesome Pages].
+This page is inspired by all the [Awesome Pages](https://github.com/sindresorhus/awesome).
 
 #### Unix 
 * [Swarthmore Unix and CS Pages and Links](https://www.cs.swarthmore.edu/~newhall/unixlinks.html<Paste>)
@@ -22,10 +22,6 @@ This page is inspired by all the [Awesome Pages].
 * [The super tiny compiler](https://github.com/thejameskyle/the-super-tiny-compiler)
 * [NODESCHOOL](https://nodeschool.io/)
 * [Presintation and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.vg9uh7bcg)
-* [Implementing Regular Expressions](https://swtch.com/~rsc/regexp/)
-* [Structural Regular Expressions](http://doc.cat-v.org/bell_labs/structural_regexps/)
-* [Scalable memory using jemalloc](https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919)
-* [The Linux Kernel Module Programming Guide](https://linux.die.net/lkmpg/)
 
 #### C
 * [Building C Projects](http://nethack4.org/blog/building-c.html)
@@ -36,6 +32,10 @@ This page is inspired by all the [Awesome Pages].
 * [memcpy vs memmove](http://www.tedunangst.com/flak/post/memcpy-vs-memmove)
 * [Notes on Programming in C](http://kamalatta.ddnss.de/otherdocs/pikestyle.html)
 * [Writing Programs with NCURSES](http://invisible-island.net/ncurses/ncurses-intro.html)
+* [Implementing Regular Expressions](https://swtch.com/~rsc/regexp/)
+* [Structural Regular Expressions](http://doc.cat-v.org/bell_labs/structural_regexps/)
+* [Scalable memory using jemalloc](https://www.facebook.com/notes/facebook-engineering/scalable-memory-allocation-using-jemalloc/480222803919)
+* [The Linux Kernel Module Programming Guide](https://linux.die.net/lkmpg/)
 
 
 #### Random 
