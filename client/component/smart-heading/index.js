@@ -29,6 +29,7 @@ let SmartHeading = (props) => {
   let children = props.children;
   if(id)
    children = [<Link className="smart-heading-anchor" key='0' to={`${window.location.pathname}#${id}`}></Link>].concat(props.children);
+ console.log('IDIDIDIDIDID', id);
   return React.createElement(
     `h${props.level}`,
     { id, className: 'smart-heading'},

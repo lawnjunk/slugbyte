@@ -35,6 +35,7 @@ store.dispatch(VIEWS_SET([
   {path: '/portfolio', title: 'portfolio', component: Construction},
   {path: '/awesome', title: 'awesome', component: AwesomeContainer},
   {path: '/random', title: 'random', component: RandomContainer},
+  {path: '/construction',  component: Construction},
   {path: '/style-guide', component: StyleGuide},
   {path: '/editor', component: MarkdownEditor },
 ]));

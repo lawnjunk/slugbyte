@@ -11,7 +11,7 @@ const production = process.env.NODE_ENV === 'production';
 
 let plugins = [
   new ExtactText('bundle.css'),
-  new HTMLPlugin({template: `${__dirname}/src/index.html`}),
+  new HTMLPlugin({template: `${__dirname}/client/index.html`}),
   new webpack.DefinePlugin({
     __DEBUG__: JSON.stringify(!production),
     __API_URL__: JSON.stringify('luwat bs uri'),
@@ -31,7 +31,7 @@ if(production){
 module.exports = {
   plugins,
   devtool: 'eval',
-  entry: `${__dirname}/src/entry.jsx`,
+  entry: `${__dirname}/client/entry.js`,
   output: {
     path: `${__dirname}/build`,
     filename: `[hash].js`,

@@ -15,5 +15,12 @@
     margin-right: auto;
     background: url('../../assets/svg/construction.svg');
     background-size: $worker-size $worker-size;
+
+    @media screen and (min-width: 800px){
+      $worker-size: 30vw;
+      height: $worker-size;
+      width: $worker-size;
+      background-size: $worker-size $worker-size;
+    }
   }
 }

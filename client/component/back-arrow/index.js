@@ -2,11 +2,11 @@
 require('./_back-arrow.scss');
 
 import React from 'react';
-import {Link} from 'react-router';
+import {browserHistory} from 'react-router';
 
 let BackArrow = ({path}) => (
-  <div>
-    <Link className="back-arrow" to={path}> back </Link>
+  <div >
+    <span onClick={browserHistory.goBack} className="back-arrow" to={path}> back </span>
     <hr />
   </div>
 );

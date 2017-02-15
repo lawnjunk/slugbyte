@@ -4,6 +4,9 @@ require('./_construction.scss');
 
 import React from 'react';
 import BackArrow from '../back-arrow';
+import {browserHistory} from 'react-router';
+
+window.browserHistory = browserHistory;
 
 let Construction = () => (
   <div className="construction">
