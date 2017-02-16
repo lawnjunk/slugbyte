@@ -21,7 +21,7 @@ let plugins = [
 if(production){
   plugins = plugins.concat([
     new CleanPlugin(),
-    new webpack.optimize.UglifyJSPlugin({
+    webpack.optimize.UglifyJSPlugin({
       minify: true,
       mangle: true,
     })
