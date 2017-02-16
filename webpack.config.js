@@ -18,15 +18,11 @@ let plugins = [
   }),
 ];
 
-if(production){
-  plugins = plugins.concat([
-    new CleanPlugin(),
-    webpack.optimize.UglifyJSPlugin({
-      minify: true,
-      mangle: true,
-    })
-  ]);
-}
+//if(production){
+  //plugins = plugins.concat([
+    //new CleanPlugin(),
+  //]);
+//}
 
 module.exports = {
   plugins,
